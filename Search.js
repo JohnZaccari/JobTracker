@@ -1,13 +1,17 @@
-'use strict';
+import React from 'react';
+import { StyleSheet, Text, View, Component } from 'react-native';
 
-var React = require('react-native');
-
-var {
-    StyleSheet,
-    View,
-    Text,
-    Component
-   } = React;
+export default class Search extends React.Component {
+  render() {
+    return (
+  	  <View style={styles.container}>
+        <Text style={styles.description}>
+        	Search Tab
+        </Text>
+      </View>
+    );
+  }
+}
 
 var styles = StyleSheet.create({
     description: {
@@ -20,17 +24,3 @@ var styles = StyleSheet.create({
         alignItems: 'center'
     }
 });
-
-class Search extends Component {
-    render() {
-        return (
-  	    <View style={styles.container}>
-         <Text style={styles.description}>
-        	  Search Tab
-         </Text>
-     </View>
-        );
-    }
-}
-
-module.exports = Search;

@@ -1,15 +1,19 @@
-'use strict';
+import React from 'react';
+import { StyleSheet, Text, View, Component } from 'react-native';
 
-var React = require('react-native');
+export default class Featured extends React.Component {
+  render() {
+    return (
+	    <View style={styles.container}>
+        <Text style={styles.description}>
+          Featured Tab
+        </Text>
+      </View>
+    );
+  }
+}
 
-var {
-    StyleSheet,
-    View,
-    Text,
-    Component
-   } = React;
-
-var styles = StyleSheet.create({
+const styles = StyleSheet.create({
     description: {
         fontSize: 20,
         backgroundColor: 'white'
@@ -20,17 +24,3 @@ var styles = StyleSheet.create({
         alignItems: 'center'
     }
 });
-
-class Featured extends Component {
-    render() {
-        return (
-  	    <View style={styles.container}>
-         <Text style={styles.description}>
-        	  Featured Tab
-         </Text>
-     </View>
-        );
-    }
-}
-
-module.exports = Featured;
