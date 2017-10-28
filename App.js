@@ -1,36 +1,36 @@
 import React from 'react';
 import { StyleSheet, Text, View, TabBarIOS } from 'react-native';
-import Featured from './Featured';
-import Search from './Search';
+import Jobs from './Jobs';
+import Customers from './Customers';
 
 export default class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { selectedTab: 'featured' };
+    this.state = { selectedTab: 'jobs' };
   }
 
   render() {
     return (
       <TabBarIOS selectedTab={this.state.selectedTab}>
                <TabBarIOS.Item
-                   selected={this.state.selectedTab === 'featured'}
+                   selected={this.state.selectedTab === 'jobs'}
                    systemIcon="featured"
                    onPress={() => {
                        this.setState({
-                           selectedTab: 'featured'
+                           selectedTab: 'jobs'
                        });
                    }}>
-                   <Featured/>
+                   <Jobs/>
                </TabBarIOS.Item>
                <TabBarIOS.Item
-                  selected={this.state.selectedTab === 'search'}
+                  selected={this.state.selectedTab === 'customers'}
                   systemIcon="search"
                    onPress={() => {
                        this.setState({
-                           selectedTab: 'search'
+                           selectedTab: 'customers'
                        });
                    }}>
-                   <Search/>
+                   <Customers/>
                </TabBarIOS.Item>
            </TabBarIOS>
     );

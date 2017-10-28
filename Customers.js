@@ -1,12 +1,12 @@
 import React from 'react';
 import { StyleSheet, Text, View, Component } from 'react-native';
 
-export default class Search extends React.Component {
+export default class Customers extends React.Component {
   render() {
     return (
   	  <View style={styles.container}>
         <Text style={styles.description}>
-        	Search Tab
+        	Customers Tab
         </Text>
       </View>
     );
