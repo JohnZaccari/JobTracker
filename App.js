@@ -14,7 +14,7 @@ export default class App extends React.Component {
       <TabBarIOS selectedTab={this.state.selectedTab}>
                <TabBarIOS.Item
                    selected={this.state.selectedTab === 'featured'}
-                   title="Jobs"
+                   systemIcon="featured"
                    onPress={() => {
                        this.setState({
                            selectedTab: 'featured'
@@ -24,7 +24,7 @@ export default class App extends React.Component {
                </TabBarIOS.Item>
                <TabBarIOS.Item
                   selected={this.state.selectedTab === 'search'}
-                  title="Customers"
+                  systemIcon="search"
                    onPress={() => {
                        this.setState({
                            selectedTab: 'search'
