@@ -1,5 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import Featured from './Featured';
+import Search from './Search';
 
 export default class App extends React.Component {
   render() {
