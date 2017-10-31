@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Component, NavigatorIOS } from 'react-native';
+import { StyleSheet, Text, View, Component, NavigatorIOS, ListView } from 'react-native';
 import JobList from './JobList.js';
 
 export default class Jobs extends React.Component {
@@ -10,7 +10,6 @@ export default class Jobs extends React.Component {
         title: "Recent Jobs",
         component: JobList
       }}/>
-
     );
   }
 }
